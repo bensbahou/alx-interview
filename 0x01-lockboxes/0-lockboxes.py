@@ -16,3 +16,4 @@ def canUnlockAll(boxes):
             if box not in keys and box < len(boxes):
                 keys.append(box)
     return len(keys) == len(boxes)
+    
