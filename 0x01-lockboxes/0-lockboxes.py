@@ -3,7 +3,7 @@
 
 
 def canUnlockAll(boxes):
-    """ Method that determines if all the boxes can be opened """
+    """Method that determines if all the boxes can be opened"""
     if boxes is None:
         return False
     if len(boxes) == 0:
@@ -16,4 +16,3 @@ def canUnlockAll(boxes):
             if box not in keys and box < len(boxes):
                 keys.append(box)
     return len(keys) == len(boxes)
-    
